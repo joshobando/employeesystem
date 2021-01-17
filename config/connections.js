@@ -18,10 +18,4 @@ connection.connect((err) => {
     }
     console.log("connection established");
 });
-
-connection.query("SELECT * FROM department", (err, rows) => {
-    if (err) throw err;
-    console.log('Data received from Db:');
-    console.log(rows);
-});
 module.exports = connection;
